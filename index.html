@@ -27,8 +27,8 @@
     <script>
       function playsound() {
         var snd = new Audio("sound.mp3");
+          snd.currentTime=0;
         snd.play();
-        snd.currentTime=0;
       }
 
       function hideDiv() {
