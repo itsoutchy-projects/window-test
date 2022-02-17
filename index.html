@@ -9,7 +9,7 @@
     <link rel="icon" href="favicon.png">
 </head>
 <body>
-  <button class="showwindowbttn" onclick="showDiv(window)">show window</button>
+  <button class="showwindowbttn" onclick="showDiv()">show window</button>
     <div id="outerwindow">
         <div id="window">
             <div id="titlebar">
@@ -18,13 +18,19 @@
             <div id="content">
                 <p>this is a window</p>
                 <div class="buttonscontainer">
-                  <button id="cancelbttn">cancel</button>
-                  <button id="OKbttn" onclick="hideDiv(window)">OK</button>
+                  <button id="cancelbttn" onclick="playsound()">cancel</button>
+                  <button id="OKbttn" onclick="hideDiv()">OK</button>
                 </div>
             </div>
         </div>
     </div>
     <script>
+      function playsound() {
+        var snd = new Audio("sound.mp3");
+        snd.play();
+        snd.currentTime=0;
+      }
+
       function hideDiv() {
    document.getElementById('window').style.display = "none";
 }
