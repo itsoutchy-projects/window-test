@@ -109,7 +109,3 @@ position:fixed;
 #titlebar:focus {
     background-color: #1396d8;
 }
-
-p {
-float: right;
-}
