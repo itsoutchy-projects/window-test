@@ -109,3 +109,7 @@ position:fixed;
 #titlebar:focus {
     background-color: #1396d8;
 }
+
+#notification_emoji {
+float: left;
+}
