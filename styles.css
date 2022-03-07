@@ -111,5 +111,5 @@ position:fixed;
 }
 
 html {
-overscroll: hidden;
+overflow: hidden;
 }
